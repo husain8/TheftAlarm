@@ -17,7 +17,7 @@ AVAudioPlayer *audioPlayer;
     {
         NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:ALARM_PATH]];
         audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-        audioPlayer.numberOfLoops = 200;
+        audioPlayer.numberOfLoops = 1;
         [audioPlayer play];
         Enabled=NO;
         
